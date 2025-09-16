@@ -17,6 +17,7 @@ How to Run:
    
 
 3. Create Virtual Env:
+
    python -m venv venv
    
    source venv/bin/activate (if on Linux)
