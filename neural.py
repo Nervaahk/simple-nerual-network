@@ -7,7 +7,9 @@ def sigmoid_derivative(sigmoid_output):
     return sigmoid_output * (1 - sigmoid_output) 
 input_val = np.array([0.7])
 losses = []
-target = float(input("Please enter a target output value the network will learn"))
+target = float(input("Please enter a target output value between 0 and 1 the network will learn"))
+if not 0 <= target <= 1:
+    raise ValueError("Target must be between 0 and 1.") 
 dograph = input("Do you want to see the plot? (yes/no): ")
 if dograph.lower() == "yes":
     graphyn = True
@@ -24,7 +26,7 @@ hiddenweights1_to_output = np.random.rand(hidden_layer1_neurons, 1)
 bias_output = np.random.rand(1) 
 learning_rate = 0.1
 
-for i in range(1000000):
+for i in range(10000):
     hidden_layer1_input = sigmoid(np.dot(input_val, hiddenweights1_input) + biases1_hidden)
     
     
@@ -55,5 +57,6 @@ plt.xlabel("Iterations")
 plt.ylabel("Loss Error")
 if graphyn:
     plt.show()
+
 
 
