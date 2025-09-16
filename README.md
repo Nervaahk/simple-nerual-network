@@ -11,7 +11,7 @@ Numpy
 
 How to Run:
 1. Clone the Repository:
-   git https://github.com/Nervaahk/simple-neural-network.git
+   git clone https://github.com/Nervaahk/simple-neural-network.git
    
    cd simple-neural-network
    
