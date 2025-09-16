@@ -1,5 +1,5 @@
 # simple-nerual-network
-A nerual network built from scratch in Numpy to learn fundamentals such as backprogagation.  
+A nerual network built from scratch in Numpy to learn fundamentals such as backprogagation. The goal is to learn a target through sigmoid activation and manual backprogagtion. This project helped me understand the math behind neural networks such as backprogation and weight updates and criterion and so on.
 
 Skills used: 
 
@@ -8,8 +8,6 @@ Python
 Numpy  
 
 
-Learned:
-How neural networks work and how functions such as sigmoid and its derivative allow the network to adjust weights and biases.
 
 How to Run:
 1. Clone the Repository:
