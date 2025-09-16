@@ -28,5 +28,5 @@ How to Run:
    pip install -r requirements.txt
    
 5. Run the Network
-6. 
+
    python neural.py
