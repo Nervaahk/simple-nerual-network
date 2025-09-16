@@ -7,7 +7,7 @@ def sigmoid_derivative(sigmoid_output):
     return sigmoid_output * (1 - sigmoid_output) 
 input_val = np.array([0.7])
 losses = []
-target = 1
+target = float(input("Please enter a target output value the network will learn"))
 dograph = input("Do you want to see the plot? (yes/no): ")
 if dograph.lower() == "yes":
     graphyn = True
@@ -55,4 +55,5 @@ plt.xlabel("Iterations")
 plt.ylabel("Loss Error")
 if graphyn:
     plt.show()
+
 
